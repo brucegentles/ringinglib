@@ -1,0 +1,37 @@
+The Ringing Class Library as a whole, together with the programs that are 
+distributed with it, are under the terms of the GNU General Public License 
+(see COPYING.GPL for the terms of this).  
+
+However, some of the core files from the Ringing Class Library are licenced 
+under the less restrictive terms of the GNU Lesser General Public License
+(see COPYING.LGPL for the terms of this).  These files are are all clearly 
+marked.
+
+The purpose of this is to allow the parts of the Ringing Class Library needed
+to reads XML method libraries to be linked into commercial applications 
+without placing any restrictions on the licence used in such applications 
+as a whole.
+
+At the time of writing the following files are licenced under the LGPL
+
+  ./ringing/common.h
+  ./ringing/common-am.h.in
+  ./ringing/common-msvc.h
+  ./ringing/libfacet.cpp
+  ./ringing/libfacet.h
+  ./ringing/library.cpp
+  ./ringing/library.h
+  ./ringing/macros.h
+  ./ringing/method.cpp
+  ./ringing/method.h
+  ./ringing/peal.cpp
+  ./ringing/peal.h
+  ./ringing/pointers.h
+  ./ringing/row.cpp
+  ./ringing/row.h
+  ./ringing/stl.cpp
+  ./ringing/xmllib.cpp
+  ./ringing/xmllib.h
+
+however, for an up-to-date list, the licences on the individual files should 
+be consulted.

@@ -1,0 +1,245 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+	    
+###############################################################################
+
+Project: "testmusic"=".\testmusic.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "test"=".\test.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "testlibrary"=".\testlibrary.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "gsiril"=".\gsiril.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name stuff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "fextent"=".\fextent.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name stuff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "testtouch"=".\testtouch.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "testprint"=".\testprint.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "methsearch"=".\methsearch.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name stuff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ringing"=".\ringing.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "testsearch"=".\testsearch.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "psline"=".\psline.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name stuff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "testbase"=".\testbase.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "testproof"=".\testproof.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ringing
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "stuff"=".\stuff.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ringingcore"=".\ringingcore.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################

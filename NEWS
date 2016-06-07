@@ -1,0 +1,64 @@
+Version 0.3.0 (11 May 2005):
+  Split into separate GPL and LGPL portions.
+  Reading & writing of XML libraries.
+  Accessing online method database. 
+  Major updates to gsiril and methsearch.
+  Use libtool for building shared libraries.
+
+Version 0.2.8 (14 December 2002):
+  Improved support for older compilers.
+  New iterator-based interface to libraries.
+  Improved falseness classes.
+  Additions to music classes.
+  Various other minor improvements and bug-fixes.
+
+Version 0.2.7 (26 March 2002):
+  New, greatly improved music classes.
+  Mechanism for exhaustive search for touches in a method.
+  Printing in PDF.
+  Many small improvements to methods, libraries and other classes.
+  More portability work.  Start working towards compiling as a DLL
+    under Windows.
+
+Version 0.2.6 (13 January 2002):
+  More method library improvements and tidying.
+  Add printing of whole methods, and colour printing.  Command-line
+    program examples/psline for method printing.
+  New touch classes (still experimental).
+
+Version 0.2.5 (4 December 2001):
+  Many method library improvements, including the ability to read
+    Central Council method lists.  More changes probably on the way
+    here.
+  Distribute as a .zip file as well as .tar.gz.
+  More documentation.
+  Some exceptions added in various places.
+  Minor improvements to generated PostScript files.
+
+Version 0.2.4 (30 October 2001):
+  More Windows fixes.
+  Fixes to printing classes.
+  Minor changes to proof and music classes.
+  First stab at a touch class introduced.
+
+Version 0.2.3 (9 October 2001):
+  Fixed a few more bugs.
+  Improvements to C++ style and fixes of compiler problems.
+
+Version 0.2.2 (27 September 2001):
+  Fixed lots of Windows compilation problems.
+  Renamed all .cc files to .cpp files.
+
+Version 0.2.1 (26 September 2001):
+  Created NEWS file!
+  More and better-organised documentation, though still not complete.
+  New mechanism for expanding place notation.
+  Added examples.
+  Changed common.h mechanism and did a few other things to make it a
+    bit easier to compile on Windows, though more needs to be done.
+
+Version 0.2.0 (11 June 2001):
+  Include Mark Banner's proof and music classes.
+
+Version 0.1.0 (7 June 2001):
+  Initial release.
