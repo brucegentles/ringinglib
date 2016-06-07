@@ -80,7 +80,7 @@ bool is_cyclic_le( const row &lh, int hunts )
   return true;
 }
 
-bool is_division_false( const method &m, const change &c, unsigned int divlen )
+bool is_division_false( const method &m, const change &c, size_t/*unsigned int*/ divlen )
 {
   if ( m.length() % divlen < 3 || m.length() % divlen == divlen-1 )
     return false;
@@ -133,7 +133,7 @@ bool has_consec_places( const change &c, size_t max_count )
 }
 
 bool division_bad_parity_hack( const method &m, const change &c, 
-			       unsigned int divlen )
+			       size_t/*unsigned int*/ divlen )
 {
   // It should be possible to do this easily without calculating rows.
 

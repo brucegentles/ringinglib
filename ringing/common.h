@@ -34,5 +34,7 @@
 
 #include <ringing/macros.h>
 
+#include <string.h>
+
 #undef RINGING_INSIDE_COMMON_H
 #endif // RINGING_COMMON_H

@@ -1,6 +1,15 @@
 *.Po
 *.Plo
+*.lo
 *.o
 *.so
+*.a
 .deps
+.libs
+autom4te.cache
+*~
+config.log
+config.status
+
+
 

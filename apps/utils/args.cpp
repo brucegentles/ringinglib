@@ -33,6 +33,7 @@
 #else
 #include <iostream>
 #endif
+#include <stdlib.h>
 
 RINGING_USING_NAMESPACE
 RINGING_USING_STD

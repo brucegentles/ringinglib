@@ -39,6 +39,7 @@
 #endif
 #include <ringing/print.h>
 #include <ringing/pdf_fonts.h>
+#include <stdio.h>
 
 RINGING_START_NAMESPACE
 

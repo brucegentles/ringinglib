@@ -39,6 +39,7 @@
 #else
 #include <iomanip>
 #endif
+#include <stdio.h>
 #include <ringing/streamutils.h>
 #include <ringing/print_pdf.h>
 

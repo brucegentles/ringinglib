@@ -68,7 +68,7 @@ public:
 
   struct cmp {
     bool operator()( multtab_row_t const& x, 
-		     multtab_row_t const& y ) const
+             multtab_row_t const& y ) const
     { return x.n < y.n; }
   };
 
@@ -76,7 +76,7 @@ public:
   friend class multtab_row_iterator;
   friend struct cmp;
 
-private:
+//private:
   size_t n; 
 };
 
@@ -104,17 +104,18 @@ class RINGING_API multtab_row_iterator
   bool operator!=( const multtab_row_iterator &other ) const
     { return r.index() != other.r.index(); }
 
- private:  
+ //protected:
+ //private:  
   friend class multtab;
   multtab_row_iterator( int n ) { r.n = n; }
 
- private:
+private:
   multtab_row_t r;
 };
 
 class multtab_post_col_t
 {
-private:
+public://private:
   multtab_post_col_t( size_t n, multtab *t )
     : n(n), t(t) 
   {}
@@ -136,20 +137,20 @@ public:
 
   struct cmp {
     bool operator()( multtab_post_col_t const& x, 
-		     multtab_post_col_t const& y ) const
+             multtab_post_col_t const& y ) const
     { return x.n < y.n; }
   };
 
   friend struct cmp;
 
-private:
+//private:
   size_t n; 
   multtab *t;
 };
 
 class multtab_pre_col_t
 {
-private:
+public: //private:
   multtab_pre_col_t( size_t n, multtab *t ) 
     : n(n), t(t) 
   {}
@@ -172,7 +173,7 @@ public:
 
   struct cmp {
     bool operator()( multtab_pre_col_t const& x, 
-		     multtab_pre_col_t const& y ) const
+             multtab_pre_col_t const& y ) const
     { return x.n < y.n; }
   };
 
@@ -218,7 +219,7 @@ public:
   // ... And a group at the other end (e.g. for whole-course comps)
   template < class InputIterator >
   multtab( InputIterator first, InputIterator last, const group& partends, 
-	   const group& postgroup )
+       const group& postgroup )
     : pends( partends ), postgroup( postgroup )
   { init( make_vector( first, last ) ); }
 
