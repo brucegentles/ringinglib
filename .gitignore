@@ -4,6 +4,8 @@
 *.o
 *.so
 *.a
+Makefile
+Makefile.in
 .deps
 .libs
 autom4te.cache

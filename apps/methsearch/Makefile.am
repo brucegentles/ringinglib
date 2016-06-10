@@ -24,7 +24,7 @@ MAINTAINERCLEANFILES = Makefile.in
 
 bin_PROGRAMS = methsearch
 
-INCLUDES = -I$(top_srcdir) -I$(top_srcdir)/apps/utils
+AM_CPP_FLAGS = -I$(top_srcdir) -I$(top_srcdir)/apps/utils
 
 methsearch_LDADD = $(top_builddir)/apps/utils/libstuff.a \
 $(top_builddir)/ringing/libringing.la @XERCES_LIBS@

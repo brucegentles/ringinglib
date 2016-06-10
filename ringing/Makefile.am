@@ -3,7 +3,7 @@
 EXTRA_DIST = common-am.h.in
 DISTCLEANFILES = common-am.h
 MAINTAINERCLEANFILES = Makefile.in
-INCLUDES = -I$(top_srcdir)
+AM_CPPFLAGS = -I$(top_srcdir)
 
 lib_LTLIBRARIES = libringingcore.la libringing.la
 

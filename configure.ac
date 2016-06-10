@@ -22,9 +22,11 @@ dnl Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 dnl $Id: configure.ac,v 1.13 2005/05/11 19:24:40 mjb47 Exp $
 
 
-AC_INIT(ringing/method.cpp)
+AC_INIT(ringing-lib, 0.3.0)
+AC_CONFIG_SRCDIR([ringing/method.cpp])
 AC_CONFIG_AUX_DIR(config)
-AM_INIT_AUTOMAKE(ringing-lib, 0.3.0)
+AC_CONFIG_MACRO_DIR(m4)
+AM_INIT_AUTOMAKE
 AM_CONFIG_HEADER(config.h)
 AC_SUBST(ac_aux_dir)
 
@@ -32,15 +34,22 @@ can_build=yes
 
 dnl --------------------------------------------------------------------------
 dnl Checks for programs.
+AC_PROG_CC
 AC_PROG_CXX
-AC_PROG_LIBTOOL
+LT_INIT
 AC_PROG_LN_S
+AC_PROG_MAKE_SET 
+AC_LANG(C++)
 
 dnl --------------------------------------------------------------------------
 dnl Checks for libraries.
-AC_USE_READLINE
-AM_CONDITIONAL(HAVE_READLINE, test "$USE_READLINE" = 1 )
-AC_SUBST(USE_READLINE)
+dnl rlstream.h can be used to test for readline.
+dnl The dlopen() function is in the C library for *BSD and in
+dnl libdl on GLIBC-based systems
+AC_CHECK_HEADERS([rlstream.h],
+        [mypj_found_readline=yes; break;])
+AM_CONDITIONAL([HAVE_READLINE], [test x$mypj_found_readline = xyes])
+AC_SUBST(HAVE_READLINE)
 AC_SUBST(READLINE_NEEDS_STDIO_H)
 AC_SUBST(READLINE_LIBS)
 
@@ -106,7 +115,8 @@ AM_CONDITIONAL(USING_MSVC, test "$IS_MSVC" = 1)
 
 dnl --------------------------------------------------------------------------
 
-AC_OUTPUT(Makefile ringing/Makefile apps/Makefile apps/gsiril/Makefile
+AC_CONFIG_FILES([Makefile ringing/Makefile apps/Makefile apps/gsiril/Makefile
   apps/utils/Makefile apps/psline/Makefile apps/methsearch/Makefile
   apps/fextent/Makefile
-  doc/Makefile examples/Makefile tests/Makefile ringing/common-am.h)
+  doc/Makefile examples/Makefile tests/Makefile ringing/common-am.h])
+AC_OUTPUT

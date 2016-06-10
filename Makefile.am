@@ -2,6 +2,8 @@
 
 AUTOMAKE_OPTIONS = dist-zip
 
+ACLOCAL_AMFLAGS = -I m4
+
 MAINTAINERCLEANFILES = Makefile.in configure aclocal.m4
 EXTRA_DIST = mkdsp
 
