@@ -48,9 +48,9 @@ dnl The dlopen() function is in the C library for *BSD and in
 dnl libdl on GLIBC-based systems
 AC_CHECK_HEADERS([rlstream.h],
         [mypj_found_readline=yes; break;])
-AM_CONDITIONAL([HAVE_READLINE], [test x$mypj_found_readline = xyes])
-AC_SUBST(HAVE_READLINE)
-AC_SUBST(READLINE_NEEDS_STDIO_H)
+AM_CONDITIONAL([USE_READLINE], [test x$mypj_found_readline = xyes])
+AC_SUBST(USE_READLINE)
+dnl AC_SUBST(READLINE_NEEDS_STDIO_H)
 AC_SUBST(READLINE_LIBS)
 
 AC_USE_XERCES
